@@ -27,7 +27,11 @@ Tints: #fdf2e9  #fae5d3
 Shades: #cf711f
 Accents:
   color: 
-Greys:#777 #555 #333
+Greys:\
+#777
+#555
+#6f6f6f (lightest gray allowed on #fdf2e9)
+#333
 
 Pictures: unsplash.com
 
