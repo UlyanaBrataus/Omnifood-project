@@ -82,6 +82,7 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
 }
 
 /* .grid:last-child {
