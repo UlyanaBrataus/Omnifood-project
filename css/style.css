@@ -10,6 +10,8 @@
   /* Making fixed height because we want to make header sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  /* for absolutely positioned burger menu, cause it's a parent of main-nav  */
+  position: relative;
 }
 
 .logo {
@@ -23,7 +25,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -53,6 +55,27 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* We can choose by attributes  */
+.icon-mobile-nav[name="close-outline"] {
+  /* to hide an element  */
+  display: none;
 }
 
 /***************************************/
@@ -337,7 +360,7 @@
   padding: 1.6rem;
 }
 
-/* To prevent the picture overflow its parent element while scaling */
+/* To prevent the picture to overflow its parent element while scaling */
 .gallery-item {
   overflow: hidden;
 }

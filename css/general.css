@@ -14,6 +14,7 @@ Bold: 700
 Default: 1
 Small: 1.05
 Medium: 1.2
+Large: 1.8
 Paragraph default 1.6
 
 Letter spacing:
@@ -59,6 +60,7 @@ html {
   /* Default browser fs - 16px, 10px = 62.5% of 16 px,  16 * 0.625 = 10
     Persentage of user's browser font-size setting. User can change fs and our element's size will change automatically  */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -66,6 +68,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* to make burger menu invisible, while it's on the right side. But only works if there is nothing absolutely positioned in relation to body  */
+  overflow-x: hidden;
 }
 
 /***************************************/
@@ -108,9 +112,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--5-cols {
+/* .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 .grid--center-v {
   align-items: center;
@@ -233,6 +237,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
