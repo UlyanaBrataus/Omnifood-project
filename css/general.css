@@ -61,6 +61,8 @@ html {
     Persentage of user's browser font-size setting. User can change fs and our element's size will change automatically  */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* does NOT work on Safari browser now (on Iphones too)*/
+  scroll-behavior: smooth;
 }
 
 body {
